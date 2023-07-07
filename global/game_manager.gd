@@ -23,12 +23,12 @@ const BASE_LEVELS_PATH = 'res://game/'
 var current_level = -1
 var levels = ['level1.tscn', 'level2.tscn']
 
-var _current_state: int = GameState.SPLASH setget _set_current_state
+var _current_state: int = GameState.SPLASH: set = _set_current_state
 var _previous_state: int
 
 
 func _ready():
-	pause_mode = Node.PAUSE_MODE_PROCESS
+	process_mode = Node.PROCESS_MODE_ALWAYS
 	
 	
 func start_game():

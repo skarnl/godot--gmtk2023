@@ -6,7 +6,7 @@ func _ready():
 		pass
 	$RaksoAnimationPlayer.play('intro')
 	
-	yield($RaksoAnimationPlayer, 'animation_finished')
+	await $RaksoAnimationPlayer.animation_finished
 	
 	Game.transition_to(Game.GameState.MAIN_MENU)
 
