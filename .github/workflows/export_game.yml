@@ -6,7 +6,7 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+'
 
 env:
-  GODOT_VERSION: 3.4.3
+  GODOT_VERSION: 4.1
   GAME_PATH: .
   
 jobs:
